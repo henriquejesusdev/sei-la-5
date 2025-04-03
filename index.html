@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de Usuário</h1>
+      <form id="userForm">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
+
+        <div class="form-group">
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" maxlength="9" required />
+        </div>
+
+        <div class="form-group">
+          <label for="logradouro">Logradouro:</label>
+          <input type="text" id="logradouro" name="logradouro" readonly />
+        </div>
+
+        <div class="form-group">
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro" readonly />
+        </div>
+
+        <div class="form-group">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" readonly />
+        </div>
+
+        <div class="form-group">
+          <label for="uf">UF:</label>
+          <input type="text" id="uf" name="uf" readonly />
+        </div>
+
+        <div class="form-group">
+          <label for="number">Numero:</label>
+          <input type="number" id="number" name="number" />
+        </div>
+
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
